@@ -67,7 +67,7 @@ with st.form("급식 의견 받아요"):
     comment = st.text_input("주관식 입력폼", placeholder="placehoder에 들어가는 값이 힌트가 됩니다.")
     sl = st.slider("슬라이더를 조정해서 값을 선택하는 입력폼", 1, 5)
     ra = st.radio("객관식 버튼 입력폼", ["1", "2", "3", "4", "5"])
-    submitted = st.form_submitted_button()
+    submitted = st.form_submitted_button("제출")
 
 
 
