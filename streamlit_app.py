@@ -52,20 +52,20 @@ st.bar_chart(df, x ='요일', y ='칼로리정보(Kcal)', color = '급식일자'
 
 #다양한 입력 기능
 
-st.date_input("날짜를 선택할 수 있는 입력폼")
+st.date_input("날짜 😘")
 st.selectbox("항목 중 하나를 선택할 수 있는 입력폼", ["월", "화", "수", "목", "금"])
 st.text_input("주관식 입력폼", placeholder="placehoder에 들어가는 값이 힌트가 됩니다.")
-st.slider("슬라이더를 조정해서 값을 선택하는 입력폼", 1, 5)#별점매기기
+st.slider("슬라이더를 조정해서 별점 👌👌", 1, 5)#별점매기기
 st.radio("객관식 버튼 입력폼", ["1", "2", "3", "4", "5"])#객관식
 
 
 #입력 기능을 하나로 묶기
 #with: 각종 요소를 함께 묶어서 입력한 내용을 제출버튼으로 한 번에 제출 가능
 with st.form("급식 의견 받아요"):
-    d = st.date_input("날짜를 선택할 수 있는 입력폼")
+    d = st.date_input("날짜 😘")
     w = st.selectbox("항목 중 하나를 선택할 수 있는 입력폼", ["월", "화", "수", "목", "금"])
     comment = st.text_input("주관식 입력폼", placeholder="placehoder에 들어가는 값이 힌트가 됩니다.")
-    sl = st.slider("슬라이더를 조정해서 값을 선택하는 입력폼", 1, 5)
+    sl = st.slider("슬라이더를 조정해서 별점 👌👌", 1, 5)
     ra = st.radio("객관식 버튼 입력폼", ["1", "2", "3", "4", "5"])
     submitted = st.form_submit_button("제출")
 
